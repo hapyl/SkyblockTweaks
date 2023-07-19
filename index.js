@@ -1,2 +1,4 @@
-import "./Config"
+import "./Config";
 import "./fishing/SeaCreatureCounter";
+import "./fishing/TrophyFish";
+import "./mining/SpeedBoostReminder";

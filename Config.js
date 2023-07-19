@@ -1,2 +1,3 @@
-function load() {
+function isFeatureEnabled(id) {
+    return true;
 }
