@@ -1,4 +1,4 @@
-import { info, success, error, debug } from "../Utils";
+import { info, success, error, debug } from "../utils/Chat";
 import * as Rarity from "../Rarity";
 
 var SEA_CREATURES = {
@@ -122,8 +122,8 @@ var SEA_CREATURES = {
         rarity: Rarity.EPIC,
     },
     PHANTOM_FISHERMAN: {
-        name: "Phantom Fisherman",
-        message: "The spirit of a long lost Phantom Fisherman has come to haunt you.",
+        name: "Phantom Fisher",
+        message: "The spirit of a long lost Phantom Fisher has come to haunt you.",
         rarity: Rarity.LEGENDARY,
     },
     GRIM_REAPER: {

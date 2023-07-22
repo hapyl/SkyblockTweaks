@@ -1,5 +1,3 @@
-import { debug } from "../Utils";
-
 const ABILITY_SUFFIX = "is now available!";
 
 register("chat", (message) => {

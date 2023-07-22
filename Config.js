@@ -1,4 +1,4 @@
-import { debug, success } from "./Utils";
+import { debug, success } from "./utils/Chat";
 
 const PATH = "hapylsSkyblock";
 const NAME = "config.json";
