@@ -23,13 +23,13 @@ export const EPIC = {
 };
 
 export const LEGENDARY = {
-    color: "&6",
+    color: "&6&l",
     name: "LEGENDARY",
     ordinal: 4
 };
 
 export const MYTHIC = {
-    color: "&d",
+    color: "&d&l",
     name: "MYTHIC",
     ordinal: 5
 };

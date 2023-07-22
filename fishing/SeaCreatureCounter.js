@@ -1,5 +1,5 @@
 import { info, success, error, debug } from "../Utils";
-import * as Rarity from "../Rarity"
+import * as Rarity from "../Rarity";
 
 var SEA_CREATURES = {
     // Regular
@@ -25,7 +25,8 @@ var SEA_CREATURES = {
     },
     SEA_WITCH: {
         name: "Sea Witch",
-        message: "It looks like you've disrupted the Sea Witch's brewing session. Watch out, she's furious!",
+        message:
+            "It looks like you've disrupted the Sea Witch's brewing session. Watch out, she's furious!",
         rarity: Rarity.UNCOMMON,
     },
     SEA_ARCHER: {
@@ -179,8 +180,60 @@ var SEA_CREATURES = {
     },
     GREAT_WHITE_SHARK: {
         name: "Great White Shark",
-        message: "Hide no longer, a Great White Shark has tracked your scent and thirsts for your blood!",
+        message:
+            "Hide no longer, a Great White Shark has tracked your scent and thirsts for your blood!",
         rarity: Rarity.LEGENDARY,
+    },
+    // Crimson Isle
+    PLHLEGBLAST: {
+        name: "Plhlegblast",
+        message: "WOAH! A Plhlegblast appeared.",
+        rarity: Rarity.RARE,
+    },
+    MAGNA_SLUG: {
+        name: "Magma Slug",
+        message: "From Beneath the lava appears a Magma Slug.",
+        rarity: Rarity.RARE,
+    },
+    MOOGMA: {
+        name: "Moogma",
+        message: "You hear a faint Moo from the lava... A Moogma appears.",
+        rarity: Rarity.RARE,
+    },
+    LAVA_LEECH: {
+        name: "Lava Leech",
+        message: "A small but fearsome Lava Leech emerges.",
+        rarity: Rarity.RARE,
+    },
+    PYROCLASTIC_WORM: {
+        name: "Pyroclastic Worm",
+        message: "You feel the heat radiating as a Pyroclastic Worm surfaces.",
+        rarity: Rarity.RARE,
+    },
+    LAVA_FLAME: {
+        name: "Lava Flame",
+        message: "A Lava Flame flies out from beneath the lava.",
+        rarity: Rarity.RARE,
+    },
+    FIRE_EEL: {
+        name: "Fire Eel",
+        message: "A Fire Eel slithers out from the depths.",
+        rarity: Rarity.RARE,
+    },
+    TAURUS: {
+        name: "Taurus",
+        message: "Taurus and his steed emerge.",
+        rarity: Rarity.RARE,
+    },
+    THUNDER: {
+        name: "Thunder",
+        message: "You hear a massive rumble as Thunder emerges.",
+        rarity: Rarity.MYTHIC,
+    },
+    JAWBUS: {
+        name: "Lord Jawbus",
+        message: "You have angered a legendary creature... Lord Jawbus has arrived",
+        rarity: Rarity.MYTHIC,
     },
     // Crystal Hollows Lava
     FLAMING_WORM: {
@@ -244,7 +297,7 @@ register("command", (arg) => {
             const creature = SEA_CREATURES[key];
             const rarity = creature.rarity;
 
-            info(`  &7${count} x ${rarity.color}${creature.name}`)
+            info(`  &7${count} x ${rarity.color}${creature.name}`);
         });
 
         success("Use &e/scc reset&a to reset the counter.");
