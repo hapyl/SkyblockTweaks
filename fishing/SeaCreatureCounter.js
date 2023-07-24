@@ -238,7 +238,7 @@ var SEA_CREATURES = {
     // Crystal Hollows Lava
     FLAMING_WORM: {
         name: "Flaming Worm",
-        message: "A flaming worm surfaces from the depths!",
+        message: "A Flaming Worm surfaces from the depths!",
         rarity: Rarity.RARE,
     },
     LAVA_BLAZE: {
@@ -335,13 +335,11 @@ function isCaughtAnySeaCreatures() {
 }
 
 function getSeaCreatureByMessage(message) {
-    for (var creatureKey in SEA_CREATURES) {
-        if (SEA_CREATURES.hasOwnProperty(creatureKey)) {
-            var creature = SEA_CREATURES[creatureKey];
+    for (var key in SEA_CREATURES) {
+        var creature = SEA_CREATURES[key];
 
-            if (creature.message === message) {
-                return creatureKey;
-            }
+        if (creature.message === message) {
+            return key;
         }
     }
 

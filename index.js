@@ -6,4 +6,7 @@ import "./fishing/TrophyFish";
 
 // Mining
 import "./mining/PickaxeAbilityReminder";
-import "./mining/GemstoneMining"
+import "./mining/GemstoneMining";
+
+// Misc
+import "./misc/LobbyRequeue";
